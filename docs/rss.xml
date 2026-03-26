@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 26 Mar 2026 15:21:41 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>MYSQL—DLL语言基础</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</link><description> # 创建数据库
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 26 Mar 2026 16:56:00 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>MYSQL—DLL语言基础</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</link><description> # 创建数据库
 1，查询所有数据库
 show databases;
 
@@ -64,4 +64,4 @@ score double(4,1)
 常用的有char与varchar
 通常在使用中加入长度，如char(10)
 varchar被称为变长字符串，会根据存储的内容计算存储空间，例如输入一个字符就占用一个字符的空间，性能较差；
-char称为定长字符串，在char(10)中，输入占用的存储空间均为10，空缺会用空格补齐，性能好。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</guid><pubDate>Thu, 26 Mar 2026 13:11:41 +0000</pubDate></item><item><title>gdf</title><link>https://komeijiAzusa.github.io/post/gdf.html</link><description>g。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/gdf.html</guid><pubDate>Thu, 26 Mar 2026 12:35:03 +0000</pubDate></item></channel></rss>
+char称为定长字符串，在char(10)中，输入占用的存储空间均为10，空缺会用空格补齐，性能好。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</guid><pubDate>Thu, 26 Mar 2026 13:11:41 +0000</pubDate></item></channel></rss>
