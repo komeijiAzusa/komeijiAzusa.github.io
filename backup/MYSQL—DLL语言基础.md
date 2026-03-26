@@ -34,5 +34,16 @@ create table 表名(
 查看数据库中的所有表
 
 # 数据类型
+1，数字的数据类型
 
+<img width="1688" height="371" alt="Image" src="https://github.com/user-attachments/assets/c04b8c32-58c7-4814-bab3-db777d034acb" />
+double使用中可标识长度（小数点前加小数点后加起来的长度）与小数位数（小数点后）如表示分数score 100.0 用
+score double(4,1)
 
+2，字符串数据类型
+常用的有char与varchar
+通常在使用中加入长度，如char(10)
+varchar被称为变长字符串，会根据存储的内容计算存储空间，例如输入一个字符就占用一个字符的空间，性能较差；
+char称为定长字符串，在char(10)中，输入占用的存储空间均为10，空缺会用空格补齐，性能好。
+
+登陆界面的用户名一般使用varchar，用户名长度是变化的，可改变存储长度。
