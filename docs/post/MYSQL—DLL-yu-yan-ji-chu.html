@@ -45,6 +45,17 @@ create table 表名(
 3，show tables
 查看数据库中的所有表
 
+4，向表中添加字段
+alter table+表名 add+字段名+数据类型(长度)+comment'';
+
+5，修改数据类型
+alter table 表名 modify 字段名 数据类型(长度);
+
+6，修改字段名与字段类型
+alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';
+7，删除字段
+alter table 表名 drop 旧字段
+
 # 数据类型
 1，数字的数据类型
 
@@ -92,6 +103,17 @@ create table 表名(
 
 3，show tables
 查看数据库中的所有表
+
+4，向表中添加字段
+alter table+表名 add+字段名+数据类型(长度)+comment'';
+
+5，修改数据类型
+alter table 表名 modify 字段名 数据类型(长度);
+
+6，修改字段名与字段类型
+alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';
+7，删除字段
+alter table 表名 drop 旧字段
 
 # 数据类型
 1，数字的数据类型
@@ -189,6 +211,14 @@ create table 表名(<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/16c71d9e-9d07-4200-85b7-b3231793eb02"><img width="597" height="176" alt="Image" src="https://github.com/user-attachments/assets/16c71d9e-9d07-4200-85b7-b3231793eb02" style="max-width: 100%; height: auto; max-height: 176px;"></a></p>
 <p>3，show tables<br>
 查看数据库中的所有表</p>
+<p>4，向表中添加字段<br>
+alter table+表名 add+字段名+数据类型(长度)+comment'';</p>
+<p>5，修改数据类型<br>
+alter table 表名 modify 字段名 数据类型(长度);</p>
+<p>6，修改字段名与字段类型<br>
+alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';<br>
+7，删除字段<br>
+alter table 表名 drop 旧字段</p>
 <h1>数据类型</h1>
 <p>1，数字的数据类型</p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c04b8c32-58c7-4814-bab3-db777d034acb"><img width="1688" height="371" alt="Image" src="https://github.com/user-attachments/assets/c04b8c32-58c7-4814-bab3-db777d034acb" style="max-width: 100%; height: auto; max-height: 371px;"></a></p>
@@ -199,7 +229,18 @@ score double(4,1)
 通常在使用中加入长度，如char(10)<br>
 varchar被称为变长字符串，会根据存储的内容计算存储空间，例如输入一个字符就占用一个字符的空间，性能较差；<br>
 char称为定长字符串，在char(10)中，输入占用的存储空间均为10，空缺会用空格补齐，性能好。</p>
-<p>登陆界面的用户名一般使用varchar，用户名长度是变化的，可改变存储长度。</p></div>
+<p>登陆界面的用户名一般使用varchar，用户名长度是变化的，可改变存储长度。</p>
+<p>示例<br>
+create table employee(<br>
+id int comment'编号',<br>
+number_id varchar(10) comment'员工工号',<br>
+name varchar(10) comment'员工姓名',<br>
+gender varchar(1) comment'性别',<br>
+age tinyint unsigned comment'年龄',<br>
+idcard char(18) comment'身份证号',<br>
+employedtime date comment'入职日期'<br>
+) comment'员工表';</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/cbba115a-fc6d-452f-a3b8-8d624fda96de"><img width="676" height="242" alt="Image" src="https://github.com/user-attachments/assets/cbba115a-fc6d-452f-a3b8-8d624fda96de" style="max-width: 100%; height: auto; max-height: 242px;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

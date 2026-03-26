@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 26 Mar 2026 14:33:11 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>MYSQL—DLL语言基础</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</link><description> # 创建数据库
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 26 Mar 2026 15:03:25 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>MYSQL—DLL语言基础</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</link><description> # 创建数据库
 1，查询所有数据库
 show databases;
 
@@ -33,6 +33,17 @@ create table 表名(
 
 3，show tables
 查看数据库中的所有表
+
+4，向表中添加字段
+alter table+表名 add+字段名+数据类型(长度)+comment'';
+
+5，修改数据类型
+alter table 表名 modify 字段名 数据类型(长度);
+
+6，修改字段名与字段类型
+alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';
+7，删除字段
+alter table 表名 drop 旧字段
 
 # 数据类型
 1，数字的数据类型
