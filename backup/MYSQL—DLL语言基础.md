@@ -33,4 +33,6 @@ create table 表名(
 3，show tables
 查看数据库中的所有表
 
+# 数据类型
+
 
