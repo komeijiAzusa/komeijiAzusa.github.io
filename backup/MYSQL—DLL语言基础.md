@@ -41,8 +41,16 @@ alter table 表名 modify 字段名 数据类型(长度);
 
 6，修改字段名与字段类型
 alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';
+
 7，删除字段
 alter table 表名 drop 旧字段
+
+8，修改表名
+alter table 旧表名 rename to 新表名；
+
+9，删除表
+drop table {if exists} 表名；
+
 
 # 数据类型
 1，数字的数据类型
@@ -72,3 +80,7 @@ employedtime date comment'入职日期'
 ) comment'员工表';
 
 <img width="676" height="242" alt="Image" src="https://github.com/user-attachments/assets/cbba115a-fc6d-452f-a3b8-8d624fda96de" />
+
+# 总结
+
+<img width="878" height="745" alt="Image" src="https://github.com/user-attachments/assets/c213efba-3e71-4cad-b024-e6354fd82267" />

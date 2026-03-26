@@ -53,8 +53,16 @@ alter table 表名 modify 字段名 数据类型(长度);
 
 6，修改字段名与字段类型
 alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';
+
 7，删除字段
 alter table 表名 drop 旧字段
+
+8，修改表名
+alter table 旧表名 rename to 新表名；
+
+9，删除表
+drop table {if exists} 表名；
+
 
 # 数据类型
 1，数字的数据类型
@@ -112,8 +120,16 @@ alter table 表名 modify 字段名 数据类型(长度);
 
 6，修改字段名与字段类型
 alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';
+
 7，删除字段
 alter table 表名 drop 旧字段
+
+8，修改表名
+alter table 旧表名 rename to 新表名；
+
+9，删除表
+drop table {if exists} 表名；
+
 
 # 数据类型
 1，数字的数据类型
@@ -216,9 +232,13 @@ alter table+表名 add+字段名+数据类型(长度)+comment'';</p>
 <p>5，修改数据类型<br>
 alter table 表名 modify 字段名 数据类型(长度);</p>
 <p>6，修改字段名与字段类型<br>
-alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';<br>
-7，删除字段<br>
+alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';</p>
+<p>7，删除字段<br>
 alter table 表名 drop 旧字段</p>
+<p>8，修改表名<br>
+alter table 旧表名 rename to 新表名；</p>
+<p>9，删除表<br>
+drop table {if exists} 表名；</p>
 <h1>数据类型</h1>
 <p>1，数字的数据类型</p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c04b8c32-58c7-4814-bab3-db777d034acb"><img width="1688" height="371" alt="Image" src="https://github.com/user-attachments/assets/c04b8c32-58c7-4814-bab3-db777d034acb" style="max-width: 100%; height: auto; max-height: 371px;"></a></p>
@@ -240,7 +260,9 @@ age tinyint unsigned comment'年龄',<br>
 idcard char(18) comment'身份证号',<br>
 employedtime date comment'入职日期'<br>
 ) comment'员工表';</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/cbba115a-fc6d-452f-a3b8-8d624fda96de"><img width="676" height="242" alt="Image" src="https://github.com/user-attachments/assets/cbba115a-fc6d-452f-a3b8-8d624fda96de" style="max-width: 100%; height: auto; max-height: 242px;"></a></p></div>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/cbba115a-fc6d-452f-a3b8-8d624fda96de"><img width="676" height="242" alt="Image" src="https://github.com/user-attachments/assets/cbba115a-fc6d-452f-a3b8-8d624fda96de" style="max-width: 100%; height: auto; max-height: 242px;"></a></p>
+<h1>总结</h1>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c213efba-3e71-4cad-b024-e6354fd82267"><img width="878" height="745" alt="Image" src="https://github.com/user-attachments/assets/c213efba-3e71-4cad-b024-e6354fd82267" style="max-width: 100%; height: auto; max-height: 745px;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
