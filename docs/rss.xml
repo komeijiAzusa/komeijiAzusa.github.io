@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 26 Mar 2026 13:14:14 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>MYSQL—DLL语言</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan.html</link><description># 创建数据库
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 26 Mar 2026 13:36:50 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>MYSQL—DLL语言</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan.html</link><description> # 创建数据库
 1，查询所有数据库
 show databases;
 
@@ -18,5 +18,21 @@ use 数据库名称
 查看当前所在的数据库
 
 # 修改数据库
-1
+
+1，创建表
+create table 表名(
+名称1 数据类型 comment''注释
+名称2 数据类型 comment''注释
+名称3 数据类型 comment''注释
+)comment'';
+
+&lt;img width='404' height='151' alt='Image' src='https://github.com/user-attachments/assets/4c2fc58d-bbd8-4eac-b063-c9862b2814c2' /&gt;
+
+2，查询表内容desc+表名称;
+&lt;img width='597' height='176' alt='Image' src='https://github.com/user-attachments/assets/16c71d9e-9d07-4200-85b7-b3231793eb02' /&gt;
+
+3，show tables
+查看数据库中的所有表
+
+
 。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan.html</guid><pubDate>Thu, 26 Mar 2026 13:11:41 +0000</pubDate></item><item><title>gdf</title><link>https://komeijiAzusa.github.io/post/gdf.html</link><description>g。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/gdf.html</guid><pubDate>Thu, 26 Mar 2026 12:35:03 +0000</pubDate></item></channel></rss>
