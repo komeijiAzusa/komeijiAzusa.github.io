@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 26 Mar 2026 16:56:00 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>MYSQL—DLL语言基础</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</link><description> # 创建数据库
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Fri, 27 Mar 2026 07:38:07 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>DML语句</title><link>https://komeijiAzusa.github.io/post/DML-yu-ju.html</link><description># DML语句对表中的数据进行增加和删改
+
+## 插入
+为指定字段插入值
+insert into 表名(字段名1,字段名2,......) values(数值1，数值2......);
+
+为所有字段插入值
+insert into 字段名 values(值1,值2,........);应一一对应。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/DML-yu-ju.html</guid><pubDate>Fri, 27 Mar 2026 07:37:39 +0000</pubDate></item><item><title>MYSQL—DLL语言基础</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</link><description> # 创建数据库
 1，查询所有数据库
 show databases;
 
