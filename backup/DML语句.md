@@ -17,4 +17,4 @@ delete from 表名 where(条件）
 
 
 
-<!-- Failed to upload "Snipaste_2026-03-27_15-34-03.png" -->
+<img width="973" height="477" alt="Image" src="https://github.com/user-attachments/assets/d930d662-34ec-44aa-a177-8e8cc431e15d" />
