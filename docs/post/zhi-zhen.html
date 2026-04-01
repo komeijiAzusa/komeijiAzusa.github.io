@@ -19,6 +19,8 @@ printf('%d',*p);解指针，输出结果是a的值
 *也可作为解指针符
 *p=5
 printf('%d',*p)，输出结果为5
+对*p的修改将会作用到a上
+p为指针，*p为常数，*p即*&a,即a的值
 。">
 <meta property="og:title" content="指针">
 <meta property="og:description" content="int a=6;
@@ -30,6 +32,8 @@ printf('%d',*p);解指针，输出结果是a的值
 *也可作为解指针符
 *p=5
 printf('%d',*p)，输出结果为5
+对*p的修改将会作用到a上
+p为指针，*p为常数，*p即*&a,即a的值
 。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://komeijiAzusa.github.io/post/zhi-zhen.html">
@@ -99,7 +103,9 @@ printf("%d",&amp;a); 取a的十进制地址，输出结果为a的十进制地址
 printf("%d",*p);解指针，输出结果是a的值<br>
 *也可作为解指针符<br>
 *p=5<br>
-printf("%d",*p)，输出结果为5</p></div>
+printf("%d",<em>p)，输出结果为5<br>
+对</em>p的修改将会作用到a上<br>
+p为指针，*p为常数，<em>p即</em>&amp;a,即a的值</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
