@@ -24,7 +24,16 @@ p为指针，*p为常数，*p即*&a,即a的值
 
 
 数据类型后的*仅用于定义指针
-。">
+
+
+
+数组指针
+定义一个数组 int c[3]={1,3,5};
+printf('%d',c);   输出结果为c的地址
+printf('%d',*c); 输出结果为数组第一个数1
+printf('%d',*(c+1));访问指针下一位的地址并解指针
+int* h=c+1;访问c首位的地址并赋到h
+printf('%d',*h)解指针。">
 <meta property="og:title" content="指针">
 <meta property="og:description" content="int a=6;
 int* p; 定义一个指针
@@ -40,7 +49,16 @@ p为指针，*p为常数，*p即*&a,即a的值
 
 
 数据类型后的*仅用于定义指针
-。">
+
+
+
+数组指针
+定义一个数组 int c[3]={1,3,5};
+printf('%d',c);   输出结果为c的地址
+printf('%d',*c); 输出结果为数组第一个数1
+printf('%d',*(c+1));访问指针下一位的地址并解指针
+int* h=c+1;访问c首位的地址并赋到h
+printf('%d',*h)解指针。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://komeijiAzusa.github.io/post/zhi-zhen.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/168258968?v=4&size=64">
@@ -112,7 +130,14 @@ printf("%d",*p);解指针，输出结果是a的值<br>
 printf("%d",<em>p)，输出结果为5<br>
 对</em>p的修改将会作用到a上<br>
 p为指针，*p为常数，<em>p即</em>&amp;a,即a的值</p>
-<p>数据类型后的*仅用于定义指针</p></div>
+<p>数据类型后的*仅用于定义指针</p>
+<p>数组指针<br>
+定义一个数组 int c[3]={1,3,5};<br>
+printf("%d",c);   输出结果为c的地址<br>
+printf("%d",<em>c); 输出结果为数组第一个数1<br>
+printf("%d",</em>(c+1));访问指针下一位的地址并解指针<br>
+int* h=c+1;访问c首位的地址并赋到h<br>
+printf("%d",*h)解指针</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
