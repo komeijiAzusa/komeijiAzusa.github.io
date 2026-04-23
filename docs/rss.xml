@@ -1,5 +1,64 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 16 Apr 2026 17:08:22 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>指针</title><link>https://komeijiAzusa.github.io/post/zhi-zhen.html</link><description>int a=6;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Thu, 23 Apr 2026 14:39:13 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>java封装典型代码</title><link>https://komeijiAzusa.github.io/post/java-feng-zhuang-dian-xing-dai-ma.html</link><description>`package packageclass.test2;
+
+public class message {
+    private  String UserName;
+    private int age;
+    private String gender;
+
+    public void setUserName(String name) {
+        UserName = name;
+    }
+
+    public String getUserName() {
+        return UserName;
+    }
+
+    public void setAge(int a) {
+        if (a&gt;0&amp;&amp;a&lt;100)
+        {
+            age=a;
+        }
+        else {
+            System.out.println('输入错误');
+        }
+
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setGender(String sex) {
+        gender = sex;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+}
+`
+`package packageclass.test2;
+
+public class MessageTest {
+    public static void main(String[] args)
+    {
+     message user1=new message();
+     user1.setUserName('张三');
+     user1.setAge(20);
+     user1.setGender('男');
+        System.out.println(user1.getUserName());
+        System.out.println(user1.getAge());
+        System.out.println(user1.getGender());
+
+    }
+}
+`
+
+
+
+
+。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/java-feng-zhuang-dian-xing-dai-ma.html</guid><pubDate>Thu, 23 Apr 2026 14:31:13 +0000</pubDate></item><item><title>指针</title><link>https://komeijiAzusa.github.io/post/zhi-zhen.html</link><description>int a=6;
 int* p; 定义一个指针
 p=&amp;a;p的指针存储a的地址
 printf('%p',&amp;a); 取a的十六进制地址,输出结果为a的地址
