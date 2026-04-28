@@ -1,2 +1,183 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Mon, 27 Apr 2026 17:17:09 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>洲梓白的博客</title><link>https://komeijiAzusa.github.io</link><description>Blog description</description><copyright>洲梓白的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/168258968?v=4&amp;size=64</url><title>avatar</title><link>https://komeijiAzusa.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 17:43:17 +0000</lastBuildDate><managingEditor>洲梓白的博客</managingEditor><ttl>60</ttl><webMaster>洲梓白的博客</webMaster><item><title>java封装典型代码</title><link>https://komeijiAzusa.github.io/post/java-feng-zhuang-dian-xing-dai-ma.html</link><description>`package packageclass.test2;
+
+public class message {
+    private  String UserName;
+    private int age;
+    private String gender;
+
+    public void setUserName(String name) {
+        UserName = name;
+    }
+
+    public String getUserName() {
+        return UserName;
+    }
+
+    public void setAge(int a) {
+        if (a&gt;0&amp;&amp;a&lt;100)
+        {
+            age=a;
+        }
+        else {
+            System.out.println('输入错误');
+        }
+
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setGender(String sex) {
+        gender = sex;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+}
+`
+`package packageclass.test2;
+
+public class MessageTest {
+    public static void main(String[] args)
+    {
+     message user1=new message();
+     user1.setUserName('张三');
+     user1.setAge(20);
+     user1.setGender('男');
+        System.out.println(user1.getUserName());
+        System.out.println(user1.getAge());
+        System.out.println(user1.getGender());
+
+    }
+}
+`
+
+
+
+
+。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/java-feng-zhuang-dian-xing-dai-ma.html</guid><pubDate>Thu, 23 Apr 2026 14:31:13 +0000</pubDate></item><item><title>指针</title><link>https://komeijiAzusa.github.io/post/zhi-zhen.html</link><description>int a=6;
+int* p; 定义一个指针
+p=&amp;a;p的指针存储a的地址
+printf('%p',&amp;a); 取a的十六进制地址,输出结果为a的地址
+printf('%d',&amp;a); 取a的十进制地址，输出结果为a的十进制地址
+printf('%d',*p);解指针，输出结果是a的值
+*也可作为解指针符
+*p=5
+printf('%d',*p)，输出结果为5
+对*p的修改将会作用到a上
+p为指针，*p为常数，*p即*&amp;a,即a的值
+
+
+数据类型后的*仅用于定义指针
+
+
+
+数组指针
+定义一个数组 int c[3]={1,3,5};
+printf('%d',c);   输出结果为c的地址
+printf('%d',*c); 输出结果为数组第一个数1
+printf('%d',*(c+1));访问指针下一位的地址并解指针
+int* h=c+1;访问c首位的地址并赋到h
+printf('%d',*h)解指针。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/zhi-zhen.html</guid><pubDate>Wed, 01 Apr 2026 03:22:36 +0000</pubDate></item><item><title>DQL语句</title><link>https://komeijiAzusa.github.io/post/DQL-yu-ju.html</link><description># 基本查询
+## 使用select语句查询多个字段
+查询某一列：select 字段1,字段2,字段3 from 表名
+查询所有：   select *from 表名;
+
+## 设置别名、
+select 字段1 as别名 from 表名;
+
+# 条件查询
+
+&lt;img width='746' height='505' alt='Image' src='https://github.com/user-attachments/assets/442bfac2-d9c6-4ac2-be43-7d25606b8d00' /&gt;
+
+# 聚合函数
+格式 select 聚合函数(字段) from 表名 where 条件;
+聚合函数有 max(最大值 ) min(最小值) avg(平均值) count(统计数量) sum(求和)
+
+# 分组查询
+
+select 字段名 from 表名 where 条件 group by 分组字段名 having 分组后过滤条件;
+其中，where在分组前进行过滤，不满足where的不参与分组，having是分组后的过滤条件
+在where中不能使用聚合函数
+
+
+
+
+
+
+。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/DQL-yu-ju.html</guid><pubDate>Tue, 31 Mar 2026 10:45:18 +0000</pubDate></item><item><title>DML语句</title><link>https://komeijiAzusa.github.io/post/DML-yu-ju.html</link><description># DML语句对表中的数据进行增加和删改
+
+## 插入
+为指定字段插入值
+insert into 表名(字段名1,字段名2,......) values(数值1，数值2......);
+
+为所有字段插入值
+insert into 字段名 values(值1,值2,........);应一一对应。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/DML-yu-ju.html</guid><pubDate>Fri, 27 Mar 2026 07:37:39 +0000</pubDate></item><item><title>MYSQL—DLL语言基础</title><link>https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</link><description> # 创建数据库
+1，查询所有数据库
+show databases;
+
+&lt;img width='246' height='235' alt='Image' src='https://github.com/user-attachments/assets/4555133b-e7d1-4249-96e1-d2093c497efe' /&gt;
+
+2，创建数据库
+&lt;img width='1132' height='95' alt='Image' src='https://github.com/user-attachments/assets/f5a390cb-6093-4c5f-80b8-7393cdd4a44c' /&gt;
+
+3，删除数据库
+drop database {if exists} 数据库名称;
+
+4,使用数据库，切换到输入的数据库中
+use 数据库名称
+
+5，select database();
+查看当前所在的数据库
+
+# 修改数据库
+
+1，创建表
+create table 表名(
+名称1 数据类型 comment''注释
+名称2 数据类型 comment''注释
+名称3 数据类型 comment''注释
+)comment'';
+
+&lt;img width='404' height='151' alt='Image' src='https://github.com/user-attachments/assets/4c2fc58d-bbd8-4eac-b063-c9862b2814c2' /&gt;
+
+2，查询表内容desc+表名称;
+&lt;img width='597' height='176' alt='Image' src='https://github.com/user-attachments/assets/16c71d9e-9d07-4200-85b7-b3231793eb02' /&gt;
+
+3，show tables
+查看数据库中的所有表
+
+4，向表中添加字段
+alter table+表名 add+字段名+数据类型(长度)+comment'';
+
+5，修改数据类型
+alter table 表名 modify 字段名 数据类型(长度);
+
+6，修改字段名与字段类型
+alter table 表名 change 旧字段名 新字段名 数据类型(长度) comment'';
+
+7，删除字段
+alter table 表名 drop 旧字段
+
+8，修改表名
+alter table 旧表名 rename to 新表名；
+
+9，删除表
+drop table {if exists} 表名；
+
+
+# 数据类型
+1，数字的数据类型
+
+&lt;img width='1688' height='371' alt='Image' src='https://github.com/user-attachments/assets/c04b8c32-58c7-4814-bab3-db777d034acb' /&gt;
+double使用中可标识长度（小数点前加小数点后加起来的长度）与小数位数（小数点后）如表示分数score 100.0 用
+score double(4,1)
+
+2，字符串数据类型
+常用的有char与varchar
+通常在使用中加入长度，如char(10)
+varchar被称为变长字符串，会根据存储的内容计算存储空间，例如输入一个字符就占用一个字符的空间，性能较差；
+char称为定长字符串，在char(10)中，输入占用的存储空间均为10，空缺会用空格补齐，性能好。</description><guid isPermaLink="true">https://komeijiAzusa.github.io/post/MYSQL%E2%80%94DLL-yu-yan-ji-chu.html</guid><pubDate>Thu, 26 Mar 2026 13:11:41 +0000</pubDate></item></channel></rss>
